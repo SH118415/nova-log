@@ -1,0 +1,111 @@
+ok: [localhost] => {
+    "msg": {
+        "changed": true, 
+        "msg": "All items completed", 
+        "results": [
+            {
+                "_ansible_ignore_errors": null, 
+                "_ansible_item_label": "sysbench", 
+                "_ansible_item_result": true, 
+                "_ansible_no_log": false, 
+                "_ansible_parsed": true, 
+                "changed": true, 
+                "cmd": "source /home/stack/overcloudrc ; openstack server create --wait --flavor m1.small --image centos7 --nic net-id=8e12814c-885f-4e9a-9224-d7e4b96a0ef4 --user-data /home/stack/browbeat/sysbench-user.file browbeat-sysbench | egrep '\\sid\\s' | awk '{print $4}'", 
+                "delta": "0:00:16.235747", 
+                "end": "2020-08-10 09:27:17.787364", 
+                "failed": false, 
+                "invocation": {
+                    "module_args": {
+                        "_raw_params": "source /home/stack/overcloudrc ; openstack server create --wait --flavor m1.small --image centos7 --nic net-id=8e12814c-885f-4e9a-9224-d7e4b96a0ef4 --user-data /home/stack/browbeat/sysbench-user.file browbeat-sysbench | egrep '\\sid\\s' | awk '{print $4}'", 
+                        "_uses_shell": true, 
+                        "argv": null, 
+                        "chdir": null, 
+                        "creates": null, 
+                        "executable": null, 
+                        "removes": null, 
+                        "stdin": null, 
+                        "warn": true
+                    }
+                }, 
+                "item": "sysbench", 
+                "rc": 0, 
+                "start": "2020-08-10 09:27:01.551617", 
+                "stderr": "", 
+                "stderr_lines": [], 
+                "stdout": "5a4ca2d1-b111-4a83-a697-287635bfa96c", 
+                "stdout_lines": [
+                    "5a4ca2d1-b111-4a83-a697-287635bfa96c"
+                ]
+            }, 
+            {
+                "_ansible_ignore_errors": null, 
+                "_ansible_item_label": "uperf", 
+                "_ansible_item_result": true, 
+                "_ansible_no_log": false, 
+                "_ansible_parsed": true, 
+                "changed": true, 
+                "cmd": "source /home/stack/overcloudrc ; openstack server create --wait --flavor m1.small --image centos7 --nic net-id=8e12814c-885f-4e9a-9224-d7e4b96a0ef4 --user-data /home/stack/browbeat/pbench-uperf-user.file browbeat-uperf | egrep '\\sid\\s' | awk '{print $4}'", 
+                "delta": "0:00:15.875544", 
+                "end": "2020-08-10 09:27:35.955117", 
+                "failed": false, 
+                "invocation": {
+                    "module_args": {
+                        "_raw_params": "source /home/stack/overcloudrc ; openstack server create --wait --flavor m1.small --image centos7 --nic net-id=8e12814c-885f-4e9a-9224-d7e4b96a0ef4 --user-data /home/stack/browbeat/pbench-uperf-user.file browbeat-uperf | egrep '\\sid\\s' | awk '{print $4}'", 
+                        "_uses_shell": true, 
+                        "argv": null, 
+                        "chdir": null, 
+                        "creates": null, 
+                        "executable": null, 
+                        "removes": null, 
+                        "stdin": null, 
+                        "warn": true
+                    }
+                }, 
+                "item": "uperf", 
+                "rc": 0, 
+                "start": "2020-08-10 09:27:20.079573", 
+                "stderr": "", 
+                "stderr_lines": [], 
+                "stdout": "d8649729-0bad-4163-aa0c-73234e56cbab", 
+                "stdout_lines": [
+                    "d8649729-0bad-4163-aa0c-73234e56cbab"
+                ]
+            }, 
+            {
+                "_ansible_ignore_errors": null, 
+                "_ansible_item_label": "linpack", 
+                "_ansible_item_result": true, 
+                "_ansible_no_log": false, 
+                "_ansible_parsed": true, 
+                "changed": true, 
+                "cmd": "source /home/stack/overcloudrc ; openstack server create --wait --flavor m1.small --image centos7 --nic net-id=8e12814c-885f-4e9a-9224-d7e4b96a0ef4 --user-data /home/stack/browbeat/linpack-user.file browbeat-linpack | egrep '\\sid\\s' | awk '{print $4}'", 
+                "delta": "0:00:16.448726", 
+                "end": "2020-08-10 09:27:54.681559", 
+                "failed": false, 
+                "invocation": {
+                    "module_args": {
+                        "_raw_params": "source /home/stack/overcloudrc ; openstack server create --wait --flavor m1.small --image centos7 --nic net-id=8e12814c-885f-4e9a-9224-d7e4b96a0ef4 --user-data /home/stack/browbeat/linpack-user.file browbeat-linpack | egrep '\\sid\\s' | awk '{print $4}'", 
+                        "_uses_shell": true, 
+                        "argv": null, 
+                        "chdir": null, 
+                        "creates": null, 
+                        "executable": null, 
+                        "removes": null, 
+                        "stdin": null, 
+                        "warn": true
+                    }
+                }, 
+                "item": "linpack", 
+                "rc": 0, 
+                "start": "2020-08-10 09:27:38.232833", 
+                "stderr": "", 
+                "stderr_lines": [], 
+                "stdout": "86490acc-37f9-445b-ad4d-390a78f61a41", 
+                "stdout_lines": [
+                    "86490acc-37f9-445b-ad4d-390a78f61a41"
+                ]
+            }
+        ]
+    }
+}
+
